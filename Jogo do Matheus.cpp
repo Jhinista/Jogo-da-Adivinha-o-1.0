@@ -34,7 +34,6 @@ int main()
 		default:
 			tentativas = 5;
 	}
-	double pontos = 1000;
 		srand(time(0));
 		numero = rand() % 25;
 
