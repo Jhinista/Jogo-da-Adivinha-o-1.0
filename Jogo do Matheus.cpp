@@ -14,11 +14,12 @@ int main()
 	do{
 	
 	printf("***************************************\n");
-	printf("* Bem-vindo ao jogo da adivinhação!!! *\n");
+	printf("* Bem-vindo ao jogo da adivinhaÃ§Ã£o!!! *\n");
 	printf("***************************************\n");
-	printf("Escolha a dificuldade do jogo\n(1) Fácil-(20 tentativas)\n(2) Médio-(15 tentativas)\n(3) Difícil-(10 tentativas)\n(4) INFERNO-(5 tentativas)");
+	printf("Escolha a dificuldade do jogo\n(1) FÃ¡cil-(20 tentativas)\n(2) MÃ©dio-(15 tentativas)\n(3) DifÃ­cil-(10 tentativas)\n(4) INFERNO-(5 tentativas)");
 	printf("\n");
 	scanf("%d", &dificuldade);
+	system("cls");
 
 	switch(dificuldade){
 		case 1:
@@ -43,7 +44,7 @@ int main()
 		printf("Seu chute foi %d\n", chute);
 			
 		if (chute == numero){
-			printf("Você acertou!!! :)\n\n");
+			printf("VocÃª acertou!!! :)\n\n");
 			break;
 		} else if(chute < numero){
 			printf("Seu chute foi menor que o numero secreto!\n\n");
