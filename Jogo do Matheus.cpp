@@ -12,7 +12,7 @@ int main()
 	char continuar ='s';
 	
 	do{
-	
+	   do{
 	printf("***************************************\n");
 	printf("* Bem-vindo ao jogo da adivinhação!!! *\n");
 	printf("***************************************\n");
@@ -31,9 +31,14 @@ int main()
 		case 3:
 			tentativas = 10;
 			break;
-		default:
+		case 4:
 			tentativas = 5;
+			break;
+		default:
+			printf("Opção Inválida\n\n");
 	}
+	   }while(dificuldade < 5 || dificuldade > 1);	   
+		   
 		srand(time(0));
 		numero = rand() % 25;
 
